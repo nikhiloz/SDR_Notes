@@ -121,12 +121,23 @@ The following table lists interesting frequencies to explore with an SDR:
 
 ---
 
+## � Related Repositories
+
+| Repository | Description |
+|-----------|-------------|
+| [dsp-tutorial-suite](https://github.com/nikhiloz/dsp-tutorial-suite) | Companion C-based DSP tutorial — 30 chapters covering FFT, filters, modulation/demodulation with working code |
+
+The DSP concepts in `04_DSP_Fundamentals/` cross-reference specific chapters from the dsp-tutorial-suite for hands-on C implementations.
+
+---
+
 ## 📚 References
 
 - [RTL-SDR Blog](https://www.rtl-sdr.com/)
 - [PySDR Textbook](https://pysdr.org/)
 - [GNU Radio Wiki](https://wiki.gnuradio.org/)
 - [Signal Identification Wiki](https://www.sigidwiki.com/)
+- [SigIDWiki](https://www.sigidwiki.com/) — Signal identification database
 
 ---
 
