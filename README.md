@@ -12,6 +12,20 @@
 
 This repository contains comprehensive documentation on Software Defined Radio (SDR) technology, covering everything from RF fundamentals to practical receiver projects.
 
+## 🔗 Companion Repositories
+
+This project is part of an integrated learning ecosystem. See how it relates to other projects:
+
+| Repository | Purpose | Type | Content |
+|-----------|---------|------|----------|
+| [dsp-tutorial-suite](https://github.com/nikhiloz/dsp-tutorial-suite) | Foundation DSP algorithms & theory | Executable code | 30 chapters: signals, transforms, filters, analysis, adaptive filters |
+| [wireless-comms-suite](https://github.com/nikhiloz/wireless-comms-suite) | Wireless communication systems | Executable code | 24 chapters: modulation, channel coding, real protocols (WiFi, Bluetooth, LoRa) |
+| **SDR_Notes** (this repo) | SDR hardware & software reference | Documentation | 9 sections: RF fundamentals, hardware comparison, software tools, protocols |
+
+**Use Case**: Reference material for [wireless-comms-suite](https://github.com/nikhiloz/wireless-comms-suite) and [dsp-tutorial-suite](https://github.com/nikhiloz/dsp-tutorial-suite)
+
+---
+
 The following diagram shows the typical SDR signal chain from antenna to computer:
 
 ```
