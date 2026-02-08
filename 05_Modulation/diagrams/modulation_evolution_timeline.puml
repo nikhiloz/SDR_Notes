@@ -1,0 +1,48 @@
+@startmindmap
+title Modulation Evolution: From Amplitude to Quantum
+
+* CARRIER WAVE
+** SCALAR (A, f, phi)
+*** AM (1900s) - 1D Amplitude
+*** FM (1930s) - 1D Frequency
+**** SSB (1950s) - Bandwidth efficiency
+*** PSK (1960s) - 1D Phase
+**** BPSK / QPSK
+*** QAM (1970s) - 2D: A + Phase (I/Q plane)
+**** 16-QAM -> 64 -> 256 -> 1024 -> 4096-QAM
+**** Probabilistic Shaping (2026+)
+
+** ARCHITECTURAL
+*** OFDM (1990s) - N subcarriers x QAM
+**** OTFS (2027+) - Delay-Doppler domain
+*** FTN Signaling (2026+) - Super-Nyquist packing
+
+** SPATIAL
+*** MIMO (2000s) - M x N spatial streams
+**** Massive MIMO (2010s) - >>64 antennas
+**** Dual-Pol Mux - 2x via polarisation
+*** RIS Modulation (2030+) - Programmable channel
+
+** TOPOLOGICAL
+*** OAM Mux (2028+) - Wavefront helical twist
+**** TIM (proposed) - OAM index + QAM hybrid
+
+** QUANTUM
+*** Quantum Rx (2035+) - Sub-shot-noise detection
+*** Semantic Comms (2035+) - Neural I/Q learning
+
+left side
+
+** STATUS
+*** 95% Saturated
+**** Amplitude
+**** Phase
+**** Frequency
+*** 60-80% Active Frontier
+**** Spatial (MIMO)
+**** Polarisation
+*** 5-20% Emerging
+**** OAM topology
+**** Quantum states
+
+@endmindmap

@@ -15,6 +15,7 @@
 | [PSK.md](PSK.md) | Phase Shift Keying |
 | [QAM.md](QAM.md) | Quadrature Amplitude Modulation |
 | [OFDM.md](OFDM.md) | Orthogonal Frequency Division Multiplexing |
+| **[NEXT_GEN_MODULATION_ANALYSIS.md](NEXT_GEN_MODULATION_ANALYSIS.md)** | **Next-gen PHY modulation — physics-first analysis of all 7 exploitable carrier wave dimensions (A, f, φ, polarisation, spatial, OAM, quantum), saturation status of each, and predictions for 2026–2045 including OTFS, OAM multiplexing, and a proposed Topological Index Modulation (TIM) hybrid** |
 
 ---
 

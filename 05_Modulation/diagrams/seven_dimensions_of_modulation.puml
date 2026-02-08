@@ -1,0 +1,70 @@
+@startuml
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName DejaVu Sans
+skinparam defaultFontSize 11
+skinparam componentBorderColor #546E7A
+
+title The 7 Exploitable Dimensions of EM Modulation
+
+package "CARRIER WAVE: s(t) = A(t) cos[2pi f(t) t + phi(t)]" {
+
+    package "CLASSICAL SCALAR (>85% saturated)" #FFCDD2 {
+        component [1. AMPLITUDE  A(t)\nE-field magnitude\n---\nASK, OOK, QAM\n2-12 bits/sym] as AMP
+        component [2. PHASE  phi(t)\nAngular position\n---\nBPSK, QPSK, 8PSK\n1-3 bits/sym] as PHASE
+        component [3. FREQUENCY  f(t)\nOscillation rate\n---\nFSK, GFSK, OFDM\n1-3 bits/sym + N subs] as FREQ
+    }
+
+    package "VECTOR / SPATIAL (40-80% exploited)" #FFE0B2 {
+        component [4. POLARISATION\nE-field orientation\n---\nDual-pol Mux\n2x streams] as POL
+        component [5. SPATIAL (MIMO)\nAntenna array paths\n---\nMassive MIMO, RIS\nM x streams] as SPATIAL
+    }
+
+    package "TOPOLOGICAL (<30% - emerging)" #C8E6C9 {
+        component [6. OAM MODE  l\nHelical wavefront twist\n---\nOAM Mux + TIM (proposed)\nN orthogonal modes] as OAM
+    }
+
+    package "QUANTUM (<10% - theoretical)" #E1BEE7 {
+        component [7. QUANTUM STATE\nCoherent/squeezed photons\n---\nDolinar/Kennedy Rx\nSub-shot-noise] as QSTATE
+    }
+}
+
+' Combined modulation arrows
+AMP -[hidden]right-> PHASE
+PHASE -[hidden]right-> FREQ
+POL -[hidden]right-> SPATIAL
+
+note bottom of AMP
+  QAM combines Amplitude + Phase
+  4096-QAM = 12 bits/sym
+  ~2 dB from Shannon limit
+end note
+
+note bottom of SPATIAL
+  Main near-term growth
+  5G: 64T64R massive MIMO
+  RIS: programmable channel (2030+)
+end note
+
+note bottom of OAM
+  Highest growth potential
+  Infinite orthogonal modes (theory)
+  TIM: C(N,K) index bits + K x QAM
+end note
+
+note bottom of QSTATE
+  Decades from deployment
+  But breaks classical noise floor
+  6 dB advantage demonstrated (NIST)
+end note
+
+legend bottom
+|= Colour |= Status |= Headroom |
+| <#FFCDD2> | Saturated (>85%) | Diminishing returns |
+| <#FFE0B2> | Active frontier (40-80%) | Main growth vector |
+| <#C8E6C9> | Emerging (<30%) | Breakthrough potential |
+| <#E1BEE7> | Theoretical (<10%) | Paradigm shift |
+end legend
+
+@enduml
